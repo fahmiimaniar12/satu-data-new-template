@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- cdn font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- end cdn font -->
+
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+    <style>
+        body {
+            font-family: "work sans", sans-serif;
+            font-optical-sizing: auto;
+            background-color: #f0f0f0;
+        }
+
+        .hero-section {
+            color: white;
+            text-align: center;
+            background-color: #c40000;
+            border-end-end-radius: 100%;
+            border-end-start-radius: 100%;
+            padding-bottom: 100px;
+        }
+
+        .container.bg-white {
+            background-color: #fbfbfb !important;
+            padding: 50px;
+        }
+
+        .search {
+            width: 35%;
+            margin: auto;
+        }
+
+        @media screen and (max-width: 990px) {
+            .hero-section {
+                border-end-end-radius: 0%;
+                border-end-start-radius: 0%;
+            }
+
+            .search {
+                width: 100%;
+            }
+
+            .gap-5 {
+                gap: 1px !important;
+            }
+
+            .row.pt-5 {
+                padding-top: 1px !important;
+            }
+
+        }
+
+        .hero-section h1 {
+            letter-spacing: 2px;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        p.accordion-text,
+        button.accordion-text {
+            text-align: justify;
+            font-size: 16px;
+        }
+
+        P.card-text {
+            font-size: 35px;
+            color: #373737;
+        }
+
+        .container p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .card.image {
+            border: 0;
+            /* background-color: #fbfbfb; */
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #ffffff;
+            background-color: #c40000;
+            box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+        }
+
+        .accordion-button:focus {
+            color: #ffffff;
+            background-color: #c40000;
+            box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #c40000;">
+        <div class="container py-5">
+            <a class="navbar-brand" href="#">
+                <img src="image/logosatudata.png" alt="Logo" width="150" class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link text-white bold font-weight-bold" href="#"><strong>BERANDA</strong></a>
+                    <a class="nav-link text-white bold font-weight-bold" href="urusan.html"><strong>URUSAN</strong></a>
+                    <a class="nav-link text-white bold font-weight-bold"
+                        href="data table.html"><strong>TABLE</strong></a>
+                    <a class="nav-link text-white bold font-weight-bold" href=""><strong>INFOGRAFIS</strong></a>
+                    <a class="nav-link text-white bold font-weight-bold" href="index2.html"><strong>DESA</strong></a>
+                    <a class="nav-link text-white bold font-weight-bold" href="#"><strong>LOGIN</strong></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section">
+        <div class="container-fluid hero-section">
+            <h1>PORTAL SATU DATA</h1>
+            <h1>KABUPATEN NUNUKAN</h1>
+
+            <div class="container text-center py-4">
+                <P>Portal Data Kabupaten Nunukan merupakan dimana data terbuka milik Pemerintah Kabupaten </P>
+                <p> Nunukan dipublikasikan. Silahkan ketik kata kunci yang ingin anda cari</P>
+            </div>
+
+            <div class="container pt-5 search">
+                <div class="input-group  mb-3">
+                    <input type="text" class="form-control form-control-lg rounded-0"
+                        placeholder="Masukan kata pencarian" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-danger text-white rounded-0" type="button"
+                        id="button-addon2"><strong>Cari</strong> </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="circle"></div> -->
+
+
+    <div class="container py-5">
+        <div class="row d-flex justify-content-center alignt-items-center gap-5">
+            <div class="col-12 col-md-5 col-lg-3 col-xl-2 text-white text-center p-4"
+                style="background-color: #c40000;">
+                <h2>META DATA</h2>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 col-xl-2 text-white text-center p-4"
+                style="background-color: #c40000;">
+                <h2>DATA PRIORITAS</h2>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 col-xl-2 text-white text-center p-4"
+                style="background-color: #c40000;">
+                <h2>PUBLIKASI STATISTIK</h2>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 col-xl-2 text-white text-center p-4"
+                style="background-color: #c40000;">
+                <h2>STATISTIK DESA</h2>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center alignt-items-center gap-5 pt-5">
+            <div class="col-12 col-md-5 col-lg-3 col-xl-2 text-white text-center p-3"
+                style="background-color: #c40000;">
+                <h2>PERMOHONAN DATA</h2>
+            </div>
+            <div class="col-12 col-md-5 col-lg-3 col-xl-2 text-white text-center p-4"
+                style="background-color: #c40000;">
+                <h2>KRITIK SARAN</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-white">
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+
+    <div class="container bg-white">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">TOTAL DATA</h5>
+                        <p class="card-text"><i class="fa-solid fa-chart-simple"></i> <strong>471</strong></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">DATA PRIORITAS</h5>
+                        <p class="card-text"><i class="fa-solid fa-chart-simple"></i> <strong>172</strong></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">SDGs</h5>
+                        <p class="card-text"><i class="fa-solid fa-chart-simple"></i> <strong>-</strong></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 col-xl-3 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">SPM</h5>
+                        <p class="card-text"><i class="fa-solid fa-chart-simple"></i> <strong>47</strong></p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container bg-transparent my-5">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                <div class="card image">
+                    <img src="image/bps-removebg-preview.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                <div class="card image">
+                    <img src="image/sdi.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
+                <div class="card image">
+                    <img src="image/Nunukan.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container bg-white my-5">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed accordion-text" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        APA ITU SATU DATA KABUPATEN NUNUKAN ?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p class="accordion-text">Satu Data merupakan sistem informasi statistik sektoral yang dapat
+                            diakses masyarakat
+                            umum sebagai media publikasi data perkembangan kabupaten Nunukan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item my-2">
+                <h2 class="accordion-header">
+                    <button class="accordion-button accordion-text" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        APAKAH DATA YANG TERTERA BISA DIBAGIKAN ?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        <p class="accordion-text">Ya, anda dapat membagikan data yang tertera melalui media internet
+                            baik website maupun
+                            social media lainnya</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed accordion-text" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        APAKAH ADA YANG BISA DIHUBUNGI ?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <P class="accordion-text">Ya, silahkan menghubungi kami melalui kontak melalui menu Kontak, anda
+                            juga dapat
+                            mengunjungi kantor kami pada alamat yang tertera</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-white" style="background-color: #c40000;">
+        <div class="container">
+
+
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-3">
+                        <h5> <strong>Kantor</strong> </h5>
+                        <hr>
+                        <p>Kantor Bupati Nunukan LT.II</p>
+                        <p>Jl.Sei Jepun Kel.Mansapa, Kec.Nunukan Selatan</p>
+                        <br>
+                        <h5> <strong>Telp</strong> </h5>
+                        <p>0852-0000-0000</p>
+                        <br>
+                        <h5> <strong>Email</strong> </h5>
+                        <p>diskominfo.kabnunukan@gmail.go.id</p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        <h5> <strong>Tetap Terhubung</strong> </h5>
+                        <hr>
+                        <h6><i class="fa-solid fa-earth-asia"></i> <strong>pemkabnunukan</strong></h6><br>
+                        <h6><i class="fa-brands fa-youtube"></i> <strong>diskominfonnk</strong></h6><br>
+                        <h6><i class="fa-brands fa-facebook"></i> <strong>diskominfonnk</strong></h6><br>
+                        <h6><i class="fa-brands fa-instagram"></i> <strong>diskominfonnk</strong></h6><br>
+                    </div>
+                    <!-- <div class="col-12 col-md-4 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                    class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                    class="form-control" placeholder="Email address"> <button class="btn btn-primary"
+                                    type="button">Subscribe</button> </div>
+                        </form>
+                    </div> -->
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>© 2025 Dinas Komunikasi Informatika Statistik dan Persandian Kabupaten Nunukan.</p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+<!-- chart js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"
+    integrity="sha256-Lye89HGy1p3XhJT24hcvsoRw64Q4IOL5a7hdOflhjTA=" crossorigin="anonymous"></script>
+<script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                backgroundColor: '#c40000',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+</html>

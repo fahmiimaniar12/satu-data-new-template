@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <!-- cdn font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- end cdn font -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .rounded-sub {
+            border-end-start-radius: 30px;
+            border-end-end-radius: 30px;
+            box-shadow: 0px 5px 2px -2px #aaaaaa;
+        }
+
+        .card {
+            box-shadow: 0px 5px 2px -2px #aaaaaa;
+        }
+
+        .card:hover {
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.06);
+        }
+
+        .container-fluid.sub p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .search-sub {
+            width: 50%;
+            margin: auto;
+        }
+
+        .container-fluid.sub {
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
+
+        .nama-desa::after {
+            content: "";
+            display: block;
+            width: 4.5rem;
+            height: 2px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .container p {
+            padding: 0;
+            margin: 0;
+        }
+
+        @media screen and (max-width: 990px) {
+            .search-sub {
+                width: 100%;
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+
+            .container-fluid.sub {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+        }
+
+        body {
+            font-family: "Work Sans", sans-serif;
+            font-optical-sizing: auto;
+            background-color: #f0f0f0;
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg mx-5" style="background-color: #ffffff;">
+        <div class="container-fluid sub py-5">
+            <a class="navbar-brand" href="#">
+                <img class="d-inline-block align-text-top"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link bold font-weight-bold" href="index.html"><strong>BERANDA</strong></a>
+                    <a class="nav-link bold font-weight-bold" href="urusan.html"><strong>URUSAN</strong></a>
+                    <a class="nav-link bold font-weight-bold" href="data table.html"><strong>TABLE</strong></a>
+                    <a class="nav-link bold font-weight-bold" href="#"><strong>INFOGRAFIS</strong></a>
+                    <a class="nav-link bold font-weight-bold" href="index2.html"><strong>DESA</strong></a>
+                    <a class="nav-link bold font-weight-bold" href="#"><strong>LOGIN</strong></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="navbar rounded-sub mx-5" style="background-color: #ffffff;">
+        <div class="container-fluid sub">
+            <div class="row pb-5">
+                <div class="col-12">
+                    <h1>Urusan</h1>
+                    <p>Pada halaman ini tesedia nama dari organisai dari pemerintah kab.Nunukan</p>
+                    <p>Sebagai mendia informasi yang dapat dibaca dan dimanfaatakan oleh masyarakat </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pt-4 pb-5 search-sub">
+        <div class="input-group  mb-3">
+            <input type="text" class="form-control form-control-lg rounded-0" placeholder="Masukan kata pencarian"
+                aria-describedby="button-addon2">
+            <button class="btn rounded-0" type="button" id="button-addon2"><strong>Cari</strong> </button>
+        </div>
+    </section>
+
+    <section class="mx-5 pb-3">
+        <div class="container-fluid sub">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-start nama-desa">Nama-nama Organisasi</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mx-5 ">
+        <div class="container-fluid sub">
+            <div class="row justify-content-around">
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="card text-center mb-3 py-5">
+                        <img src="image/Nunukan.png" alt="">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <a href="#">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="card text-center mb-3 py-5">
+                        <img src="image/Nunukan.png" alt="">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <a href="#">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="card text-center mb-3 py-5">
+                        <img src="image/Nunukan.png" alt="">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <a href="#">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="card text-center mb-3 py-5">
+                        <img src="image/Nunukan.png" alt="">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <a href="#">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container-fluid text-dark mt-5" style="background-color: #ffffff;">
+        <div class="container">
+
+
+            <footer class="py-5">
+                <div class="row">
+                    <div class="col-12 col-md-4 mb-3">
+                        <h5> <strong>Kantor</strong> </h5>
+                        <hr>
+                        <p>Kantor Bupati Nunukan LT.II</p>
+                        <p>Jl.Sei Jepun Kel.Mansapa, Kec.Nunukan Selatan</p>
+                        <br>
+                        <h5> <strong>Telp</strong> </h5>
+                        <p>0852-0000-0000</p>
+                        <br>
+                        <h5> <strong>Email</strong> </h5>
+                        <p>diskominfo.kabnunukan@gmail.go.id</p>
+                    </div>
+                    <div class="col-12 col-md-4 mb-3">
+                        <h5> <strong>Tetap Terhubung</strong> </h5>
+                        <hr>
+                        <h6><i class="fa-solid fa-earth-asia"></i> <strong>pemkabnunukan</strong></h6><br>
+                        <h6><i class="fa-brands fa-youtube"></i> <strong>diskominfonnk</strong></h6><br>
+                        <h6><i class="fa-brands fa-facebook"></i> <strong>diskominfonnk</strong></h6><br>
+                        <h6><i class="fa-brands fa-instagram"></i> <strong>diskominfonnk</strong></h6><br>
+                    </div>
+                    <!-- <div class="col-12 col-md-4 mb-3">
+                        <form>
+                            <h5>Subscribe to our newsletter</h5>
+                            <p>Monthly digest of what's new and exciting from us.</p>
+                            <div class="d-flex flex-column flex-sm-row w-100 gap-2"> <label for="newsletter1"
+                                    class="visually-hidden">Email address</label> <input id="newsletter1" type="email"
+                                    class="form-control" placeholder="Email address"> <button class="btn btn-primary"
+                                    type="button">Subscribe</button> </div>
+                        </form>
+                    </div> -->
+                </div>
+                <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                    <p>© 2025 Dinas Komunikasi Informatika Statistik dan Persandian Kabupaten Nunukan.</p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
