@@ -24,6 +24,9 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="asset/style.css">
 
     <title>Document</title>
@@ -76,7 +79,7 @@
     <!-- <div class="circle"></div> -->
 
 
-    <div class="container py-5">
+    <div class="container py-5" data-aos="fade-up">
         <div class="row d-flex justify-content-center alignt-items-center gap-5">
             <div class="col-12 col-md-5 col-lg-3 col-xl-2 text-white text-center p-4"
                 style="background-color: #c40000;">
@@ -97,24 +100,24 @@
         </div>
 
         <div class="row d-flex justify-content-center alignt-items-center gap-5 pt-5">
-            <div class="col-12 col-md-5 col-lg-3 col-xl-2 text-white text-center p-3"
+            <div class="col-12 col-md-5 col-lg-3 col-xl-3 text-white text-center p-3"
                 style="background-color: #c40000;">
                 <h2>PERMOHONAN DATA</h2>
             </div>
-            <div class="col-12 col-md-5 col-lg-3 col-xl-2 text-white text-center p-4"
+            <div class="col-12 col-md-5 col-lg-3 col-xl-3 text-white text-center p-4"
                 style="background-color: #c40000;">
                 <h2>KRITIK SARAN</h2>
             </div>
         </div>
     </div>
 
-    <div class="container bg-white">
+    <div class="container bg-white" data-aos="fade-up">
         <div>
             <canvas id="myChart"></canvas>
         </div>
     </div>
 
-    <div class="container bg-white">
+    <div class="container bg-white" data-aos="fade-up">
         <div class="row">
             <div class="col-12 col-md-6 col-lg-3 col-xl-3 mb-3">
                 <div class="card">
@@ -158,7 +161,7 @@
         </div>
     </div>
 
-    <div class="container bg-transparent my-5">
+    <div class="container bg-transparent my-5" data-aos="fade-up">
         <div class="row">
             <div class="col-12 col-md-4 col-lg-4 col-xl-4 mb-3">
                 <div class="card image">
@@ -181,7 +184,7 @@
         </div>
     </div>
 
-    <div class="container bg-white my-5">
+    <div class="container bg-white my-5" data-aos="fade-up">
         <div class="accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -282,9 +285,16 @@
     </div>
 
 </body>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 <!-- chart js -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js"
     integrity="sha256-Lye89HGy1p3XhJT24hcvsoRw64Q4IOL5a7hdOflhjTA=" crossorigin="anonymous"></script>
+
+
 <script>
     const ctx = document.getElementById('myChart');
 

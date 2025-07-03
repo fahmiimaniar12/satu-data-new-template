@@ -76,7 +76,7 @@ P.card-text.index {
 
 .card:hover {
     transition: all 0.3s ease-in-out;
-    transform: scale(1.06);
+    transform: scale(1.03);
 }
 
 .accordion-button:not(.collapsed) {
@@ -145,10 +145,5 @@ P.card-text.index {
     .navbar-expand-lg.mx-5 {
         margin-left: 1rem !important;
         margin-right: 1rem !important;
-    }
-
-    .card:hover {
-        transition: all 0.3s ease-in-out;
-        transform: scale(1.03);
     }
 }
