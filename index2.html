@@ -62,11 +62,41 @@
         </div>
     </section>
 
-    <section class="container pt-4 pb-5 search-sub">
-        <div class="input-group  mb-3">
-            <input type="text" class="form-control form-control-lg rounded-0" placeholder="Masukan kata pencarian"
-                aria-describedby="button-addon2">
-            <button class="btn rounded-0" type="button" id="button-addon2"><strong>Cari</strong> </button>
+    <section class="container pt-4 pb-5 sub">
+        <div class="mb-3">
+            <div class="row align-items-center g-1  justify-content-center">
+                <div class="col-12 col-md-3">
+                    <select id="kota" name="kota" class="form-select form-select-lg rounded-0">
+                        <option value="">-- Pilih Kota --</option>
+                        <option value="jakarta">Jakarta</option>
+                        <option value="bandung">Bandung</option>
+                        <option value="surabaya">Surabaya</option>
+                        <option value="medan">Medan</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <select id="tahun" name="tahun" class="form-select form-select-lg rounded-0">
+                        <option value="">-- Pilih Tahun --</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <!-- Tambah tahun sesuai kebutuhan -->
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-5">
+                    <input type="text" class="form-control form-control-lg rounded-0"
+                        placeholder="Masukan kata pencarian">
+                </div>
+                <div class="col-12 col-md-1 text-center">
+                    <button class="btn rounded-0" type="button" id="cari"><strong>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Cari</strong> </button>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -188,5 +218,20 @@
 
 
 </body>
+
+<script>
+    let cari = document.getElementById('cari');
+
+    cari.addEventListener('click', function () {
+        this.disabled = true;
+        this.innerHTML = `<i class="fas fa-spinner fa-spin me-2"></i> Proses`;
+
+        // Opsional: aktifkan kembali setelah 3 detik
+        setTimeout(() => {
+            this.disabled = false;
+            this.innerHTML = `<i class="fas fa-search me-2"></i> Cari`;
+        }, 3000);
+    });
+</script>
 
 </html>

@@ -69,9 +69,9 @@
             <div class="container pt-5 search">
                 <div class="input-group  mb-3">
                     <input type="text" class="form-control form-control-lg rounded-0"
-                        placeholder="Masukan kata pencarian" aria-describedby="button-addon2">
+                        placeholder="Masukan kata pencarian" aria-describedby="cari">
                     <button class="btn btn-outline-danger text-white rounded-0" type="button"
-                        id="button-addon2"><strong>Cari</strong> </button>
+                        id="cari"><strong>Cari</strong> </button>
                 </div>
             </div>
         </div>
@@ -317,6 +317,20 @@
             }
         }
     });
+
+    let cari = document.getElementById('cari');
+
+    cari.addEventListener('click', function () {
+        this.disabled = true;
+        this.innerHTML = `<i class="fas fa-spinner fa-spin me-2"></i> Proses`;
+
+        // Opsional: aktifkan kembali setelah 3 detik
+        setTimeout(() => {
+            this.disabled = false;
+            this.innerHTML = `<i class="fas fa-search me-2"></i> Cari`;
+        }, 3000);
+    });
+
 </script>
 
 </html>
